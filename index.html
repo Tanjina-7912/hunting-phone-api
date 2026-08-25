@@ -19,10 +19,16 @@
 
 <!-- another search field -->
  <input type="text" id="search-field2" placeholder="Search here" class="input" />
-<button class="btn btn-primary">Search</button>
+<button class="btn btn-primary" onclick="handleSearch2()">Search</button>
       </section>
       <!-- search result -->
 <section>
+<!-- spinner or loader -->
+<div class="text-center my-40 hidden">
+  <span class="loading loading-spinner text-primary loading-xl"></span>
+</div>
+
+
     <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
 <!-- <div class="card bg-base-100 w-96 shadow-xl">
   <figure>
@@ -39,6 +45,10 @@
   </div>
 </div> -->
     </div>
+    <!-- show all button -->
+     <div id="show-all-container" class="hidden">
+      <button class="btn btn-success">Show All</button>
+     </div>
 </section>
     </main>
     <footer>
